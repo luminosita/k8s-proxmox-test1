@@ -1,14 +1,28 @@
 cluster:
   name: ${cluster_name}
   id: 1
-kubeProxyReplacement: true
- # Talos specific
+  # Talos specific
 k8sServiceHost: localhost
 k8sServicePort: 7445
+kubeProxyReplacement: strict
+l7Proxy: false
 securityContext:
   capabilities:
-    ciliumAgent: [ CHOWN,KILL,NET_ADMIN,NET_RAW,IPC_LOCK,SYS_ADMIN,SYS_RESOURCE,DAC_OVERRIDE,FOWNER,SETGID,SETUID ]
-    cleanCiliumState: [ NET_ADMIN,SYS_ADMIN,SYS_RESOURCE ]
+    ciliumAgent:
+      [
+        CHOWN,
+        KILL,
+        NET_ADMIN,
+        NET_RAW,
+        IPC_LOCK,
+        SYS_ADMIN,
+        SYS_RESOURCE,
+        DAC_OVERRIDE,
+        FOWNER,
+        SETGID,
+        SETUID,
+      ]
+    cleanCiliumState: [NET_ADMIN, SYS_ADMIN, SYS_RESOURCE]
 cgroup:
   autoMount:
     enabled: false
@@ -43,8 +57,16 @@ k8sClientRateLimit:
   burst: 100
 l2announcements:
   enabled: true
+loadBalancer:
+  algorithm: maglev
+bgpControlPlane:
+  enabled: true # this is required for the BGP exercise to work!!
 externalIPs:
   enabled: true
+bpf:
+  masquerade: true
+cni:
+  exclusive: false
 enableCiliumEndpointSlice: true
 gatewayAPI:
   enabled: true
