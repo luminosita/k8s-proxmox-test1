@@ -1,5 +1,5 @@
 module "talos-image" {
-  source = "../modules/terraform-talos-image"
+  source = "../../modules/terraform-talos-image"
 
   providers = {
     talos = talos
@@ -11,7 +11,7 @@ module "talos-image" {
 module "proxmox-vm" {
   depends_on = [ module.talos-image ]
 
-  source = "../modules/terraform-proxmox-vm"
+  source = "../../modules/terraform-proxmox-vm"
 
   providers = {
     proxmox = proxmox
@@ -34,7 +34,7 @@ module "proxmox-vm" {
 module "talos-bootstrap" {
   depends_on = [ module.proxmox-vm ]
 
-  source = "../modules/terraform-talos-bootstrap"
+  source = "../../modules/terraform-talos-bootstrap"
 
   providers = {
     talos = talos
