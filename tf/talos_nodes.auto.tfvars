@@ -27,8 +27,6 @@ talos_nodes = {
     #update        = true
     datastore_id = "vm-disks"
   }
-
-talos_nodes = {
   "ctrl-test1-01" = {
     host_node    = "proxmox"
     machine_type = "controlplane"
@@ -57,5 +55,4 @@ talos_nodes = {
     #update        = true
     datastore_id = "vm-disks"
   }
-}
 }
