@@ -9,8 +9,8 @@ talos_nodes = {
       mac_address = "BC:24:11:2E:C8:E5"
       # gateway     = "192.168.20.1"
       # subnet_mask = "24"
-      network_device = "vmbr1"
-      vlan_id        = 20
+      device  = "vmbr1"
+      vlan_id = 20
     }
     vm_id         = 400
     cpu           = 4
@@ -27,8 +27,8 @@ talos_nodes = {
       mac_address = "BC:24:11:2E:C8:E6"
       # gateway     = "192.168.20.1"
       # subnet_mask = "24"
-      network_device = "vmbr1"
-      vlan_id        = 20
+      device  = "vmbr1"
+      vlan_id = 20
     }
     vm_id         = 405
     cpu           = 4
@@ -47,8 +47,8 @@ talos_nodes = {
       mac_address = "BC:24:11:2E:C8:F5"
       # gateway     = "192.168.120.1"
       # subnet_mask = "24"
-      network_device = "vmbr3"
-      vlan_id        = 20
+      device  = "vmbr3"
+      vlan_id = 20
     }
     vm_id         = 410
     cpu           = 4
@@ -65,8 +65,8 @@ talos_nodes = {
       mac_address = "BC:24:11:2E:C8:F6"
       # gateway     = "192.168.120.1"
       # subnet_mask = "24"
-      network_device = "vmbr3"
-      vlan_id        = 20
+      device  = "vmbr3"
+      vlan_id = 20
     }
     vm_id         = 415
     cpu           = 4
