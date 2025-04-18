@@ -69,7 +69,7 @@ variable "talos_nodes" {
       dns         = optional(list(string))
       mac_address = string
       gateway     = optional(string)
-      subnet_mask = optional(string, "24")
+      subnet_mask = optional(string)
       device      = optional(string)
       vlan_id     = optional(number)
     })
