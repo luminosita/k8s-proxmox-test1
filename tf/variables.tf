@@ -67,7 +67,7 @@ variable "talos_nodes" {
     host_node      = string
     machine_type   = string
     datastore_id   = string
-    ip             = string
+    ip             = optional(string)
     dns            = optional(list(string))
     mac_address    = string
     network_device = optional(string)
