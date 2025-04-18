@@ -49,8 +49,8 @@ talos_nodes = {
       # subnet_mask = "24"
       network_device = "vmbr3"
       vlan_id        = 20
-      vm_id          = 410
     }
+    vm_id          = 410
     cpu           = 4
     ram_dedicated = 4096
     #    igpu          = true
