@@ -1,5 +1,5 @@
 talos_nodes = {
-  "ctrl-test1-00" = {
+  "ctrl-bgp-00" = {
     host_node    = "proxmox"
     machine_type = "controlplane"
     network = {
@@ -18,7 +18,7 @@ talos_nodes = {
     #    igpu          = true
     datastore_id = "vm-disks"
   }
-  "work-test1-00" = {
+  "work-bgp-00" = {
     host_node    = "proxmox"
     machine_type = "worker"
     network = {
@@ -37,7 +37,7 @@ talos_nodes = {
     #update        = true
     datastore_id = "vm-disks"
   }
-  "ctrl-test1-01" = {
+  "ctrl-bgp-01" = {
     host_node    = "proxmox"
     machine_type = "controlplane"
     network = {
@@ -56,7 +56,7 @@ talos_nodes = {
     #    igpu          = true
     datastore_id = "vm-disks"
   }
-  "work-test1-01" = {
+  "work-bgp-01" = {
     host_node    = "proxmox"
     machine_type = "worker"
     network = {

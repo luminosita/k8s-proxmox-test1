@@ -2,7 +2,7 @@ talos_image = {
   version        = "v1.9.2"
   update_version = "v1.9.2" # renovate: github-releases=siderolabs/talos
 
-  image_filename_prefix = "talos-test1"
+  image_filename_prefix = "talos-bgp"
   datastore_id          = "local"
 
   #  schematic_path = "talos/image/schematic.yaml"
