@@ -72,6 +72,9 @@ variable "talos_nodes" {
       subnet_mask = optional(string)
       device      = optional(string)
       vlan_id     = optional(number)
+
+      pod_cidr     = optional(string)
+      service_cidr = optional(string)
     })
     vm_id         = number
     cpu           = number
