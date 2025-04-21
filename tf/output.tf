@@ -19,6 +19,10 @@ output "ipv4_addresses" {
   value = module.proxmox-vm.ipv4_addresses
 }
 
+output "mac_addresses" {
+  value = module.proxmox-vm.mac_addresses
+}
+
 resource "local_file" "machine_configs" {
   for_each        = module.talos-bootstrap.machine_config
   content         = each.value.machine_configuration
