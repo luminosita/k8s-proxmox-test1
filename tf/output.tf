@@ -4,8 +4,8 @@ output "kube_config" {
 }
 
 output "versions" {
-  value     = {
-    talos_version = var.talos_cluster_config.talos_machine_config_version
+  value = {
+    talos_version      = var.talos_cluster_config.talos_machine_config_version
     kubernetes_version = var.talos_cluster_config.kubernetes_version
   }
 }
@@ -15,12 +15,12 @@ output "talos_config" {
   sensitive = true
 }
 
-output "ipv4_addresses" {
-  value = module.proxmox-vm.ipv4_addresses
-}
-
-output "mac_addresses" {
-  value = module.proxmox-vm.mac_addresses
+output "proxmox_vm" {
+  value = {
+    ipv4_addresses          = module.proxmox-vm.ipv4_addresses
+    mac_addresses           = module.proxmox-vm.mac_addresses
+    network_interface_names = module.proxmox-vm.network_interface_names
+  }
 }
 
 resource "local_file" "machine_configs" {
