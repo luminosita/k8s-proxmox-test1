@@ -19,7 +19,6 @@ output "proxmox_vm" {
   value = {
     ipv4_addresses          = module.proxmox-vm.ipv4_addresses
     mac_addresses           = module.proxmox-vm.mac_addresses
-    network_interface_names = module.proxmox-vm.network_interface_names
   }
 }
 
