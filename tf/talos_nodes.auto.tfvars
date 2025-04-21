@@ -11,9 +11,6 @@ talos_nodes = {
       # subnet_mask = "24"
       device  = "vmbr1"
       vlan_id = 20
-
-      pod_cidr = "10.234.0.0/16"
-      service_cidr = "10.96.0.0/12"
     }
     vm_id         = 400
     cpu           = 4
@@ -32,9 +29,6 @@ talos_nodes = {
       # subnet_mask = "24"
       device  = "vmbr1"
       vlan_id = 20
-
-      pod_cidr = "10.234.0.0/16"
-      service_cidr = "10.96.0.0/12"
     }
     vm_id         = 405
     cpu           = 4
@@ -55,9 +49,6 @@ talos_nodes = {
       # subnet_mask = "24"
       device  = "vmbr3"
       vlan_id = 20
-
-      pod_cidr = "10.244.0.0/16"
-      service_cidr = "10.96.0.0/12"
     }
     vm_id         = 410
     cpu           = 4
@@ -76,9 +67,6 @@ talos_nodes = {
       # subnet_mask = "24"
       device  = "vmbr3"
       vlan_id = 20
-
-      pod_cidr = "10.244.0.0/16"
-      service_cidr = "10.96.0.0/12"
     }
     vm_id         = 415
     cpu           = 4
