@@ -2,7 +2,7 @@
 apiVersion: cilium.io/v2alpha1
 kind: CiliumBGPClusterConfig
 metadata:
-  name: cilium-bgp
+  name: cilium-bgp-dc1
 spec:
   nodeSelector:
     matchLabels:
@@ -22,7 +22,7 @@ spec:
 apiVersion: cilium.io/v2alpha1
 kind: CiliumBGPClusterConfig
 metadata:
-  name: cilium-bgp
+  name: cilium-bgp-dc2
 spec:
   nodeSelector:
     matchLabels:
