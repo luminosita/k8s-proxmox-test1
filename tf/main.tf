@@ -1,6 +1,6 @@
 locals {
   #Read IP adddress for "eth0" interface
-  vm_ips = { for k, v in module.proxmox-vm.ipv4_addresses : k => v["eth0"] }
+  vm_ips = { for k, v in module.proxmox-vm.ipv4_addresses : k => v["eth0"][0] }
 }
 
 module "talos-image" {
