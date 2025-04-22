@@ -1,3 +1,8 @@
+locals {
+  #Read IP adddress for "eth0" interface
+  vm_ips = { for k, v in module.proxmox-vm.ipv4_addresses : k => v["eth0"] }
+}
+
 module "talos-image" {
   source = "../../modules/terraform-talos-image"
 
@@ -41,5 +46,7 @@ module "talos-bootstrap" {
   cluster = var.talos_cluster_config
 
   nodes = var.talos_nodes
+
+  vm_ip_addresses = local.vm_ips
 }
 
