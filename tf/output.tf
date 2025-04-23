@@ -40,8 +40,4 @@ resource "local_file" "kube_config" {
   file_permission = "0600"
 }
 
-#FIXME: XXX
-# output "gitops" {
-#     value = module.gitops.result
-# }
 

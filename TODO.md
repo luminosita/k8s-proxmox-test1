@@ -11,6 +11,5 @@
         --helm-set=auto-direct-node-routes=true  (https://docs.cilium.io/en/stable/network/concepts/routing/)
 
 - [ ] BUG: Talos not Ready on DHCP
-    failed to select an interface for a device {"component": "controller-runtime", "controller": "network.DeviceConfigController", "error": "no matching
-    network device for defined selector: &{NetworkDeviceBus: NetworkDeviceHardwareAddress:BC:24:11:2E:C8:E5 NetworkDevicePermanentAddress: NetworkDevicePCIID: NetworkDeviceKernelDriver: NetworkDevicePhysical:<nil>}"}
-
+    node IP skipped, please use .machine.kubelet.nodeIP to provide explicit subnet for the node IP {"component": "controller-runtime", "controller":
+    "k8s.NodeIPController", "address": "192.168.120.20"}
