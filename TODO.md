@@ -1,4 +1,4 @@
-- [ ] Test
+- [ ] DNS / Static DHCP mapping issue in OPNSense
 - [ ] Cilium Config ?
 
         --helm-set=routingMode=native  (https://docs.cilium.io/en/stable/network/concepts/routing/)
@@ -14,8 +14,11 @@
         Error: node IP skipped, please use .machine.kubelet.nodeIP to provide explicit subnet for the node IP {"component": "controller-runtime", "controller":
         "k8s.NodeIPController", "address": "192.168.120.20"}
 
+- [ ] BUG: OPNSense Firewall on x.x.x.255 blocked
+- [ ] BUG: OPNSense long delay on direct WAN route. NAT route works perfectly
+
 - [ ] K8s firewall ports
-- [ ] Talos Cluster "Not Ready" state when using DHCP 
+- [ ] Talos Cluster "Not Ready" state when using DHCP (talosctl get service)
 - [x] Talos cluster, OPNsense, BGP, Pod CIDR, Service CIDR
 - [x] DHCP IP addresses for Talos 
 - [x] Read Proxmox VM IP (return value from terraform resource) and feed into Talos bootstrap module
@@ -25,6 +28,7 @@
 - [ ] Theory: Cilium routing between control and worker nodes (PodCIDR, Gateway)
 - [x] https://ardaxi.com/blog/k8s-bgp/ -> Talos VM machine settings, Cilium settings, BGP setting, profiles 
 - [x] https://docs.cilium.io/en/stable/network/bgp-control-plane/bgp-control-plane/ -> new BGP manifests, export PodCIDR
+- [ ] advertise Services not working
 
 - [ ] Kube VIP, Talos VIP, Cilium VIP, Fqdn for VIP 
 
@@ -75,6 +79,8 @@
 ### Misc
 
 - [ ] Port trunking, one server in two VLANs??? 
+- [ ] ACME SSL certificate for Proxmox cluster
+- [ ] ACME SSL certificate for OPNSense
 
 
 
