@@ -17,7 +17,7 @@ output "talos_config" {
 
 output "proxmox_vm" {
   value = {
-    ipv4_addresses          = module.proxmox-vm.ipv4_addresses
+    ipv4_addresses = local.vm_ips
   }
 }
 
@@ -39,5 +39,4 @@ resource "local_file" "kube_config" {
   filename        = "output/kube-config.yaml"
   file_permission = "0600"
 }
-
 
