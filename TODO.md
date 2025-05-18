@@ -14,7 +14,7 @@
         Error: node IP skipped, please use .machine.kubelet.nodeIP to provide explicit subnet for the node IP {"component": "controller-runtime", "controller":
         "k8s.NodeIPController", "address": "192.168.120.20"}
 
-- [ ] BUG: OPNSense Firewall on x.x.x.255 blocked
+- [ ] BUG: OPNSense Firewall on UDP x.x.x.255 blocked
 - [ ] BUG: OPNSense long delay on direct WAN route. NAT route works perfectly
 
 - [ ] K8s firewall ports
