@@ -4,7 +4,7 @@ terraform {
   required_providers {
     proxmox = {
       source  = "bpg/proxmox"
-      version = "0.75"
+      version = "0.78.0"
     }    
     kustomization = {
       source  = "kbst/kustomization"
@@ -12,7 +12,7 @@ terraform {
     }
     talos = {
       source  = "siderolabs/talos"
-      version = "0.7.1"
+      version = "0.8.1"
     }
     kubernetes = {
       source  = "hashicorp/kubernetes"
