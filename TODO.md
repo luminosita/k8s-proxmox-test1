@@ -5,7 +5,7 @@
         --helm-set=enableIPv4Masquerade=false  (https://docs.cilium.io/en/stable/network/concepts/masquerading/)
         --helm-set=auto-direct-node-routes=true  (https://docs.cilium.io/en/stable/network/concepts/routing/)
 
-- [ ] BUG: Talos not Ready on DHCP
+- [x] BUG: Talos not Ready on DHCP
 
         Talos troubleshooting guide (https://www.talos.dev/v1.9/introduction/troubleshooting/)
     
@@ -14,11 +14,11 @@
         Error: node IP skipped, please use .machine.kubelet.nodeIP to provide explicit subnet for the node IP {"component": "controller-runtime", "controller":
         "k8s.NodeIPController", "address": "192.168.120.20"}
 
-- [ ] BUG: OPNSense Firewall on UDP x.x.x.255 blocked
+- [x] BUG: OPNSense Firewall on UDP x.x.x.255 blocked
 - [ ] BUG: OPNSense long delay on direct WAN route. NAT route works perfectly
 
-- [ ] K8s firewall ports
-- [ ] Talos Cluster "Not Ready" state when using DHCP (talosctl get service)
+- [x] K8s firewall ports
+- [x] Talos Cluster "Not Ready" state when using DHCP (talosctl get service)
 - [x] Talos cluster, OPNsense, BGP, Pod CIDR, Service CIDR
 - [x] DHCP IP addresses for Talos 
 - [x] Read Proxmox VM IP (return value from terraform resource) and feed into Talos bootstrap module
